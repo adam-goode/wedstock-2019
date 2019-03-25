@@ -76,17 +76,14 @@
                         </button>
 
                     </div>
-                    <div class="col-7">
-                        
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="stage-times" id="venue" style="background-image: url('images/stage-times.jpg')";>
+        <div class="stage-times">
             <div class="container h-100">
                 <div class="row h-100 align-items-end justify-content-center">
-                    <div class="col-9 text-right pb-5">
+                    <div class="col-12 col-md-9 text-md-right text-center pb-5 stage-time-inner">
                         <h2>1.30pm – Arrival and drinks</h2>
                         <h2>2pm – The ceremony</h2>
                         <h2>4pm – Festival feast and speeches</h2>
@@ -103,20 +100,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-6 px-0">
-                    <div class="fire-img" id="venue" style="background-image: url('images/fire-img.jpg')";></div>
+                    <div class="fire-img" style="background-image: url('images/camp.jpg')";>
+                        <div class="staying-over">
+                            <img src="/images/staying-over.svg" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 px-0 camping-info">
-                    <div class="row align-items-center justify-content-center h-100">
-                        <div class="col-12">
-                            <div class="camping" id="venue" style="background-image: url('images/camping.jpg')";></div>
-                        </div>
-                        <div class="col-12 col-md-10 p-5">
+                    <div class="row align-items-center justify-content-center h-100 p-5">
+                        <div class="col-12 col-md-10 text-center text-md-left">
                             <p>In true festival fashion, there are plenty of options for staying overnight on-site. </p>
                             <p>If you’d like to be a true festival goer, you’re welcome to bring your own tent! The venue charges £10 per tent and we can provide bacon butties in the morning!</p>
                             <p>You can also book a glamping pod, if you’re feeling a bit posh! 4m bell tents cost £160 to hire and sleep up to 4 people in style, with memory foam mattresses, fairy lights, rugs and cushions. There are other options available to sleep 6 or 8 people – just ask us if you’d like details of those. If you’d like to book one, email tipiandbelltenthire@gmail.com, quoting our names and the wedding date as a reference so they know you’re with us!</p>
                             <p>If you have a caravan, motorhome or, if you’re a real rock star, your very own tour bus, you can bring it along! The venue charges £10 if you’d like to park onsite overnight. </p>
                             <p>If camping isn’t your style, there are three hotels within three miles of the venue – hopefully close enough so that you can pop back in the morning for breakfast! </p>
-
                         </div>
                     </div>
                 </div>
@@ -131,7 +128,7 @@
                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38988.3722942098!2d-1.946354195606252!3d52.35639737305314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bf776882481f%3A0x3d7209a06b6cf259!2sAlcott+Farm!5e0!3m2!1sen!2suk!4v1552599860259" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38988.3722942098!2d-1.946354195606252!3d52.35639737305314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bf776882481f%3A0x3d7209a06b6cf259!2sAlcott+Farm!5e0!3m2!1sen!2suk!4v1552599860259" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>

@@ -692,6 +692,30 @@ img.logo {
   background-size: cover;
   background-position: top left;
   color: #ffffff;
+  position: relative;
+  background-image: url("/images/stage-times.jpg");
+}
+
+@media (max-width: 991.98px) {
+  .stage-times {
+    background-image: url("/images/stage-times-mobile.jpg");
+    background-position: top center;
+  }
+}
+
+.stage-times .stage-time-inner {
+  position: absolute;
+  bottom: 20%;
+}
+
+.stage-times .stage-time-inner h2 {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 991.98px) {
+  .stage-times .stage-time-inner h2 {
+    font-size: 1.25rem;
+  }
 }
 
 .wid-100 {
@@ -699,9 +723,27 @@ img.logo {
 }
 
 .fire-img {
-  height: 110vh;
+  height: 100%;
   background-size: cover;
   background-position: bottom left;
+}
+
+@media (max-width: 767.98px) {
+  .fire-img {
+    height: 70vh;
+    text-align: center;
+  }
+}
+
+.fire-img .staying-over {
+  width: 100%;
+}
+
+.fire-img .staying-over img {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 45%;
 }
 
 .camping {
@@ -729,6 +771,11 @@ img.logo {
 
 .btn-primary i {
   transition: ease all 0.5s;
+}
+
+.btn-primary:hover {
+  background-color: #569b81;
+  border-color: #fff;
 }
 
 .btn-primary:hover i {

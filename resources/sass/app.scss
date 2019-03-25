@@ -169,18 +169,48 @@ img.logo {
 	}
 }
 .stage-times {
-  height: 100vh;
-  background-size: cover;
-  background-position: top left;
-  color: #ffffff;
+	height: 100vh;
+	background-size: cover;
+	background-position: top left;
+	color: #ffffff;
+	position: relative;
+	background-image: url('/images/stage-times.jpg');
+	@include media-breakpoint-down(md) {
+		background-image: url('/images/stage-times-mobile.jpg');
+		background-position: top center;
+	}
+	.stage-time-inner {
+		position: absolute;
+		bottom: 20%;
+		h2 {
+			font-size: 1.15rem;
+			@include media-breakpoint-down(md) {
+				font-size: 1.25rem;
+			}
+		}
+	}
 }
+
 .wid-100 {
   width: 100vw !important;
 }
 .fire-img {
-  height: 110vh;
+  height: 100%;
   background-size: cover;
   background-position: bottom left;
+  @include media-breakpoint-down(sm) {
+	height: 70vh;
+	text-align: center;
+  }
+  .staying-over {
+  	width: 100%;
+	img {
+		width: 50%;
+		position: absolute;
+		left: 25%;
+		top: 45%;
+	}
+  }
 }
 
 .camping {
@@ -207,6 +237,8 @@ img.logo {
 		transition: ease all 0.5s;
 	}
 	&:hover {
+		background-color: #569b81;
+		border-color: #fff;
 		i {
 			transform: translate(10px);
 		}
