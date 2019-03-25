@@ -121,18 +121,52 @@
         </div>
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center staying-location">
-                <div class="staying-location-info col-12 col-md-4">
-                    <div class="col-12">Westmead Hotel <div class="small">(2 miles away)</div></div>
-                </div>
-                <div class="col-12 col-md-4 staying-location-info">
-                    <div class="col-12">The Limes Country Lodge Hotel <div class="small">(2 miles away)</div></div>
-                </div>
-                <div class="col-12 col-md-4 staying-location-info">
-                    <div class="col-12">Abbey Hotel <div class="small">(3 miles away)</div></div>
+                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                    <span class="col-12 d-block">Westmead Hotel <span class="d-block small">(2 miles away)</span></span>
+                </a>
+                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                    <span class="col-12 d-block">The Limes Country Lodge Hotel <span class="d-block small">(2 miles away)</span></span>
+                </a>
+                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                    <span class="col-12 d-block">Abbey Hotel <span class="d-block small">(3 miles away)</span></span>
+                </a>
+            </div>
+        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="present-hero" style="background-image: url('images/present.jpg')";></div>
+                <div class="presents-wrapper">
+                    <div class="presents-inner d-flex h-100 align-items-center justify-content-center">
+                        <div class="row w-100 justify-content-center">
+                            <div class="col-12 col-md-6">
+                                <img class="logo" src="/images/presents.svg" alt="">
+                                <p class="text-center mx-5">The most important thing to us is that our favourite people are there to celebrate with us on our big day. So if you’re able to make it, you’ve already given us the best gift ever! If you’d still really like to give us a present, there is one thing we can think of. We’re planning to go on a safari honeymoon in South Africa, so any contributions towards making our trip even more memorable would be massively appreciated. (But honestly, only if you want to. Phew, that was awkward!)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="present-hero" style="background-image: url('images/post.jpg')";></div>
+                <div class="presents-wrapper">
+                    <div class="presents-inner d-flex h-100 align-items-center">
+                        <div class="row w-100 justify-content-center">
+                            <div class="col-12 col-md-10">
+                                <img class="rsvp ml-5 mb-3" src="/images/rsvp.svg" alt="">
+                                <p class="text-left mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">

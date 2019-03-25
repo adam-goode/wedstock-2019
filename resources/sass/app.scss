@@ -21,6 +21,13 @@ body {
   background-size: cover;
   background-position: center center;
 }
+.present-hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  @include media-breakpoint-down(md) {
+  }
+}
 p {
 	font-size: 1rem;
 }
@@ -120,6 +127,18 @@ p {
   bottom: 0;
   right: 0;
 }
+.presents-wrapper {
+  position: absolute;
+  background-color: rgba(21,32,51,0.35);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  .presents-inner {
+  		color: #ffffff;
+  		font-size: 1.15rem;
+  }
+}
 
 .logo-container {
 	h2 {
@@ -137,7 +156,7 @@ p {
 img.logo {
 	transform: scale(0.5);
 	@include media-breakpoint-down(lg) {
-		transform: scale(0.85);		
+		transform: scale(0.65);		
 		margin-bottom: 1rem;
 	}
 }
@@ -263,7 +282,9 @@ img.logo {
 		&:nth-of-type(n+1) {
 			background: #f00;
 			transition: 0.5s ease all;
-			&:hover {
+			&:hover,
+			&:active,
+			&:focus {
 				background-color: rgba(0,0,0,0.5);
 				background-image: url('/images/westmead.jpg');
 				background-position: center center;
@@ -273,7 +294,9 @@ img.logo {
 		&:nth-of-type(n+2) {
 			background: #f44;
 			transition: 0.5s ease all;
-			&:hover {
+			&:hover,
+			&:active,
+			&:focus {
 				background-color: rgba(0,0,0,0.5);
 				background-image: url('/images/limes.jpg');
 				background-position: center center;
@@ -283,7 +306,9 @@ img.logo {
 		&:nth-of-type(n+3) {
 			background: #b44;
 			transition: 0.5s ease all;
-			&:hover {
+			&:hover,
+			&:active,
+			&:focus {
 				background-color: rgba(0,0,0,0.5);
 				background-image: url('/images/abbey.jpg');
 				background-position: center center;
@@ -291,6 +316,9 @@ img.logo {
 			}
 		}
 	}
+}
+.rsvp {
+	max-width: 30vw;
 }
 @media (max-width: 576px) {
 	.navbar-nav {
