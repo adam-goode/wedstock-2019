@@ -244,7 +244,54 @@ img.logo {
 		}
 	}
 }
-
+.staying-location {
+	text-align: center;
+	.staying-location-info {
+		height: 100%;		
+		padding: 20vh 0;
+		font-weight: 700;
+		font-size: 1.15rem;
+		color: #fff;
+		transition: 0.5s ease all;
+		@include media-breakpoint-down(sm) {
+			padding: 20vw;
+		}
+		.small {
+			font-size: 0.9rem;
+			font-weight: 400;
+		}
+		&:nth-of-type(n+1) {
+			background: #f00;
+			transition: 0.5s ease all;
+			&:hover {
+				background-color: rgba(0,0,0,0.5);
+				background-image: url('/images/westmead.jpg');
+				background-position: center center;
+				background-size: cover;
+			}
+		}
+		&:nth-of-type(n+2) {
+			background: #f44;
+			transition: 0.5s ease all;
+			&:hover {
+				background-color: rgba(0,0,0,0.5);
+				background-image: url('/images/limes.jpg');
+				background-position: center center;
+				background-size: cover;
+			}
+		}
+		&:nth-of-type(n+3) {
+			background: #b44;
+			transition: 0.5s ease all;
+			&:hover {
+				background-color: rgba(0,0,0,0.5);
+				background-image: url('/images/abbey.jpg');
+				background-position: center center;
+				background-size: cover;
+			}
+		}
+	}
+}
 @media (max-width: 576px) {
 	.navbar-nav {
 		display: contents !important;

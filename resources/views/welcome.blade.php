@@ -64,7 +64,7 @@
         <div class="venue" id="venue" style="background-image: url('images/section-two-bg.jpg')";>
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center">
-                    <div class="col-12 col-md-7 venue-inner">
+                    <div class="col-12 col-md-7 venue-inner text-center text-md-left">
                         <img src="images/venue-heading.svg" class="venue-heading pb-md-5 pb-3" alt="">
                         <h2>Alcott Farm, Alvechurch B48 7EH</h2>
                         <p class="introduction">Our wedding ceremony and reception will be at Alcott Farm, just outside Alvechurch village.</p>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 px-0 camping-info">
+                <div class="col-12 col-md-6 camping-info">
                     <div class="row align-items-center justify-content-center h-100 p-5">
                         <div class="col-12 col-md-10 text-center text-md-left">
                             <p>In true festival fashion, there are plenty of options for staying overnight on-site. </p>
@@ -116,6 +116,19 @@
                             <p>If camping isn’t your style, there are three hotels within three miles of the venue – hopefully close enough so that you can pop back in the morning for breakfast! </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center staying-location">
+                <div class="staying-location-info col-12 col-md-4">
+                    <div class="col-12">Westmead Hotel <div class="small">(2 miles away)</div></div>
+                </div>
+                <div class="col-12 col-md-4 staying-location-info">
+                    <div class="col-12">The Limes Country Lodge Hotel <div class="small">(2 miles away)</div></div>
+                </div>
+                <div class="col-12 col-md-4 staying-location-info">
+                    <div class="col-12">Abbey Hotel <div class="small">(3 miles away)</div></div>
                 </div>
             </div>
         </div>

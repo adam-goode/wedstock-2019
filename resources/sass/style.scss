@@ -38,7 +38,7 @@ a {
 	transition: transform .5s;
 
 	&.is-hidden {
-		transform: translateY(-100%);
+		transform: translateY(-130%);
 	}
 
 	@include MQ(L) {
