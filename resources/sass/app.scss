@@ -3,12 +3,232 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
 @import 'variables';
+@import 'style';
+@import 'partials/_variables';
+@import 'partials/layout';
+@import 'partials/mixins';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+body {
+	font-family: futura-pt, sans-serif;
 }
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+p {
+	font-size: 1rem;
+}
+.navbar-nav {
+	.nav-item {
+		line-height: 1.5rem;
+		display: inline-block;
+		width: auto;
+		a {
+			color: #fff;
+			display: inline;
+			width: auto;
+			font-size: 1rem;
+			padding: 2rem !important;
+			display: inline-block;
+			font-weight: 700;
+			@include media-breakpoint-down(md) {
+				height: 55px; 
+				line-height: 1rem;
+				font-size: 0.95rem;
+				padding: 2.5rem 0.5rem 3rem 0.5rem !important;
+			}	
+		}
+		&:first-of-type {
+			background-color: #569b81;
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+			clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+			transition: ease all 0.5s;
+			&:hover {
+				transform: scale(1.1);
+				z-index: 100;
+			}
+		}
+		&:nth-of-type(2){
+				background-color: #b34083;
+				-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+				transition: ease all 0.5s;
+				&:hover {
+					transform: scale(1.1);
+				z-index: 100;
+				}
+		}
+		&:nth-of-type(3){
+				background-color: #3196a2;
+				-webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 89%);
+				clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 89%);
+				transition: ease all 0.5s;
+				&:hover {
+					transform: scale(1.1);
+				z-index: 100;
+				}
+		}
+		&:nth-of-type(4){
+				background-color: #d7888e;
+				-webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+				clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+				transition: ease all 0.5s;
+				&:hover {
+					transform: scale(1.1);
+				z-index: 100;
+				}
+		}
+		&:nth-of-type(5){
+			background-color: #fff;
+			color: #569b81;
+			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
+			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
+			transition: ease all 0.5s;
+			&:hover {
+				transform: scale(1.1);
+			z-index: 100;
+			}
+			a {
+				color: #569b81 !important;
+			}
+		}
+	}
+}
+
+
+.fixed-top {
+  padding-top: 0 !important;
+}
+
+.logo-container {
+  width: 100vw;
+  position: absolute;
+  height: auto;
+  top: 35%;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.logo-container {
+	h2 {
+		font-weight: 700;
+		font-size: 1.5rem;
+		color: #fff;
+		width: 100%;
+		@include media-breakpoint-down(md) {
+			font-size: 1.2rem;
+			text-shadow: 0px 0px 12px rgba(150, 150, 150, 1);
+		}
+	}
+}
+
+img.logo {
+	transform: scale(0.5);
+	@include media-breakpoint-down(lg) {
+		transform: scale(0.85);		
+		margin-bottom: 1rem;
+	}
+}
+
+.venue {
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+	@include media-breakpoint-down(md) {
+		height: 100%;
+		.venue-inner{
+			padding-bottom: 5rem;
+			padding-top: 5rem;
+		}
+	}
+	h2 {
+		@include media-breakpoint-down(md) {
+			font-size: 1.25rem;
+			font-weight: 700;
+		}
+	}
+}
+
+.venue-heading {
+	width: 75%;
+	@include media-breakpoint-down(md) {
+		width: 50%;
+	}
+}
+.stage-times {
+  height: 100vh;
+  background-size: cover;
+  background-position: top left;
+  color: #ffffff;
+}
+.wid-100 {
+  width: 100vw !important;
+}
+.fire-img {
+  height: 110vh;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.camping {
+  width: 50vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.camping-info {
+  background-color: #152033;
+  color: #fff;
+}
+.btn-primary {
+	border-radius: 100px;
+	background: transparent;
+	border: 1px solid #fff;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	i {
+		transition: ease all 0.5s;
+	}
+	&:hover {
+		i {
+			transform: translate(10px);
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar-nav {
+		display: contents !important;
+		transform: scale(0.85);
+		.nav-item {
+			width: auto
+			a {
+				padding: 2rem !important;
+			}
+			.fire-img {
+				max-height: 50vh;
+				background-position: bottom center;
+			}
+		}
+	}
+}
+	/*@media (max-width: 576px)
+	.nav-item > a
+	padding: 1rem*/

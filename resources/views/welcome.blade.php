@@ -3,97 +3,144 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.typekit.net/sce2eaq.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+ 
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+    <div id="app">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+    <header class="cd-auto-hide-header">
+        <nav class="cd-primary-nav">
+            <nav class="navbar navbar-expand-sm fixed-top wid-100 p-0">
+            <div class="d-flex justify-content-center wid-100" id="navbarSupportedContent">
+                <ul class="navbar-nav d-md-flex d-sm-inline d-contents justify-content-center align-items-center text-center m-auto wid-100">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#venue">The Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">Stage Times</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">Staying Over</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">Presents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">RSVP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </nav> 
+    </header> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="hero" style="background-image: url('images/hero-img.jpg')";></div>
+                        <div class="logo-wrapper">
+                        <div class="logo-container d-block justify-content-center">
+                            <img class="logo" src="/images/logo.svg" alt="">
+                                                    <h2 class="text-center">Helen and Joe are getting married!</h2>
+                            <h2 class="text-center">Saturday 24th August 2019</h2>
+                            <h2 class="text-center">Alcott Farm, Alvechurch B48 7EH</h2>
+                        </div>
+                        <div class="caption-wrapper">
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <div class="venue" id="venue" style="background-image: url('images/section-two-bg.jpg')";>
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-7 venue-inner">
+                        <img src="images/venue-heading.svg" class="venue-heading pb-md-5 pb-3" alt="">
+                        <h2>Alcott Farm, Alvechurch B48 7EH</h2>
+                        <p class="introduction">Our wedding ceremony and reception will be at Alcott Farm, just outside Alvechurch village.</p>
+                        <p>It’s a beautiful 65-acre farm, and anyone who knows Helen will not be surprised to hear, it’s home to a load of horses. </p>
+                        <p>The easiest way to find it is to head from Alvechurch village along Radford Road towards Weatheroak Hill. When you reach the Coach and Horses pub, turn right onto Icknield Street. Follow the road along from there and you’ll see a sign for Alcott Weddings, alongside the gate to the car park. </p>
+                        <p>There’s plenty of parking on-site for everyone, so park up and let’s get partying! We’re keeping our fingers crossed for good weather, but there’s always a chance it could be cold and rainy, so please make sure you bring enough warm stuff to keep you toasty all evening. </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            View map <i class="fas fa-angle-right"></i>
+                        </button>
+
+                    </div>
+                    <div class="col-7">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stage-times" id="venue" style="background-image: url('images/stage-times.jpg')";>
+            <div class="container h-100">
+                <div class="row h-100 align-items-end justify-content-center">
+                    <div class="col-9 text-right pb-5">
+                        <h2>1.30pm – Arrival and drinks</h2>
+                        <h2>2pm – The ceremony</h2>
+                        <h2>4pm – Festival feast and speeches</h2>
+                        <h2>7pm – Evening guests join the party</h2>
+                        <h2>8pm – Cake cutting</h2>
+                        <h2>8.30pm – First dance</h2>
+                        <h2>9pm – Live music</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 px-0">
+                    <div class="fire-img" id="venue" style="background-image: url('images/fire-img.jpg')";></div>
+                </div>
+                <div class="col-12 col-md-6 px-0 camping-info">
+                    <div class="row align-items-center justify-content-center h-100">
+                        <div class="col-12">
+                            <div class="camping" id="venue" style="background-image: url('images/camping.jpg')";></div>
+                        </div>
+                        <div class="col-12 col-md-10 p-5">
+                            <p>In true festival fashion, there are plenty of options for staying overnight on-site. </p>
+                            <p>If you’d like to be a true festival goer, you’re welcome to bring your own tent! The venue charges £10 per tent and we can provide bacon butties in the morning!</p>
+                            <p>You can also book a glamping pod, if you’re feeling a bit posh! 4m bell tents cost £160 to hire and sleep up to 4 people in style, with memory foam mattresses, fairy lights, rugs and cushions. There are other options available to sleep 6 or 8 people – just ask us if you’d like details of those. If you’d like to book one, email tipiandbelltenthire@gmail.com, quoting our names and the wedding date as a reference so they know you’re with us!</p>
+                            <p>If you have a caravan, motorhome or, if you’re a real rock star, your very own tour bus, you can bring it along! The venue charges £10 if you’d like to park onsite overnight. </p>
+                            <p>If camping isn’t your style, there are three hotels within three miles of the venue – hopefully close enough so that you can pop back in the morning for breakfast! </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38988.3722942098!2d-1.946354195606252!3d52.35639737305314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bf776882481f%3A0x3d7209a06b6cf259!2sAlcott+Farm!5e0!3m2!1sen!2suk!4v1552599860259" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="{{ asset('js/app.js') }}" type="text/javascript" > </script>
+
     </body>
 </html>
