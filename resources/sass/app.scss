@@ -45,11 +45,11 @@ p {
 			display: inline-block;
 			font-weight: 700;
 			@include media-breakpoint-down(md) {
-				height: 55px; 
+				height: 55px;
 				line-height: 1rem;
 				font-size: 0.95rem;
 				padding: 2.5rem 0.5rem 3rem 0.5rem !important;
-			}	
+			}
 		}
 		&:first-of-type {
 			background-color: #569b81;
@@ -156,7 +156,7 @@ p {
 img.logo {
 	transform: scale(0.5);
 	@include media-breakpoint-down(lg) {
-		transform: scale(0.65);		
+		transform: scale(0.65);
 		margin-bottom: 1rem;
 	}
 }
@@ -215,6 +215,7 @@ img.logo {
 }
 .fire-img {
   height: 100%;
+  min-height: 100vh;
   background-size: cover;
   background-position: bottom left;
   @include media-breakpoint-down(sm) {
@@ -266,7 +267,7 @@ img.logo {
 .staying-location {
 	text-align: center;
 	.staying-location-info {
-		height: 100%;		
+		height: 100%;
 		padding: 20vh 0;
 		font-weight: 700;
 		font-size: 1.15rem;
