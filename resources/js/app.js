@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function($){
     var mainHeader = $('.cd-auto-hide-header'),
         secondaryNavigation = $('.cd-secondary-nav'),

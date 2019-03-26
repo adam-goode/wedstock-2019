@@ -4,10 +4,14 @@
                     <div class="hero" style="background-image: url('images/hero-img.jpg')";></div>
                         <div class="logo-wrapper">
                         <div class="logo-container d-block justify-content-center">
-                            <img class="logo" src="/images/logo.svg" alt="">
-                                                    <h2 class="text-center">Helen and Joe are getting married!</h2>
-                            <h2 class="text-center">Saturday 24th August 2019</h2>
-                            <h2 class="text-center">Alcott Farm, Alvechurch B48 7EH</h2>
+                            <div data-aos="zoom-out" data-aos-duration="2000">
+                                <img class="logo" src="/images/logo.svg" alt="">
+                            </div>
+                            <div data-aos="zoom-out" data-aos-delay="1000" data-aos-duration="2000">
+                                <h2 class="text-center">Helen and Joe are getting married!</h2>
+                                <h2 class="text-center">Saturday 24th August 2019</h2>
+                                <h2 class="text-center">Alcott Farm, Alvechurch B48 7EH</h2>
+                            </div>
                         </div>
                         <div class="caption-wrapper">
 
@@ -17,7 +21,7 @@
             </div>
         </div>
         
-        <div class="venue" id="venue" style="background-image: url('images/section-two-bg.jpg')";>
+        <div class="venue" id="#venue" style="background-image: url('images/section-two-bg.jpg')";>
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-12 col-md-7 venue-inner text-center text-md-left">
@@ -55,14 +59,14 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 px-0">
+                <div class="col-12 col-md-6 px-0" div data-aos="fade-up-right" data-aos-duration="1000">
                     <div class="fire-img" style="background-image: url('images/camp.jpg')";>
                         <div class="staying-over">
                             <img src="/images/staying-over.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 camping-info">
+                <div class="col-12 col-md-6 camping-info" div data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="row align-items-center justify-content-center h-100 p-5">
                         <div class="col-12 col-md-10 text-center text-md-left">
                             <p>In true festival fashion, there are plenty of options for staying overnight on-site. </p>
@@ -77,15 +81,19 @@
         </div>
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center staying-location">
-                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+            
+                <a data-aos="fade-up-right" data-aos-delay="0" href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
                     <span class="col-12 d-block">Westmead Hotel <span class="d-block small">(2 miles away)</span></span>
                 </a>
-                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+
+                <a data-aos="fade-up-right" data-aos-delay="500" href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
                     <span class="col-12 d-block">The Limes Country Lodge Hotel <span class="d-block small">(2 miles away)</span></span>
                 </a>
-                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+
+                <a data-aos="fade-up-right" data-aos-delay="1000" href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
                     <span class="col-12 d-block">Abbey Hotel <span class="d-block small">(3 miles away)</span></span>
                 </a>
+
             </div>
         </div>
     <div class="container-fluid">
