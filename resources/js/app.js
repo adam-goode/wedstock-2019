@@ -1,33 +1,117 @@
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+jQuery(document).ready(function($){
+    var mainHeader = $('.cd-auto-hide-header'),
+        secondaryNavigation = $('.cd-secondary-nav'),
+        //this applies only if secondary nav is below intro section
+        belowNavHeroContent = $('.sub-nav-hero'),
+        headerHeight = mainHeader.height();
+    
+    //set scrolling variables
+    var scrolling = false,
+        previousTop = 0,
+        currentTop = 0,
+        scrollDelta = 10,
+        scrollOffset = 150;
 
-require('./bootstrap');
+    mainHeader.on('click', '.nav-trigger', function(event){
+        // open primary navigation on mobile
+        event.preventDefault();
+        mainHeader.toggleClass('nav-open');
+    });
 
-window.Vue = require('vue');
+    $(window).on('scroll', function(){
+        if( !scrolling ) {
+            scrolling = true;
+            (!window.requestAnimationFrame)
+                ? setTimeout(autoHideHeader, 250)
+                : requestAnimationFrame(autoHideHeader);
+        }
+    });
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+    $(window).on('resize', function(){
+        headerHeight = mainHeader.height();
+    });
 
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+    function autoHideHeader() {
+        var currentTop = $(window).scrollTop();
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+        ( belowNavHeroContent.length > 0 ) 
+            ? checkStickyNavigation(currentTop) // secondary navigation below intro
+            : checkSimpleNavigation(currentTop);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+        previousTop = currentTop;
+        scrolling = false;
+    }
 
-const app = new Vue({
-    el: '#app'
+    function checkSimpleNavigation(currentTop) {
+        //there's no secondary nav or secondary nav is below primary nav
+        if (previousTop - currentTop > scrollDelta) {
+            //if scrolling up...
+            mainHeader.removeClass('is-hidden');
+        } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+            //if scrolling down...
+            mainHeader.addClass('is-hidden');
+        }
+    }
+
+    function checkStickyNavigation(currentTop) {
+        //secondary nav below intro section - sticky secondary nav
+        var secondaryNavOffsetTop = belowNavHeroContent.offset().top - secondaryNavigation.height() - mainHeader.height();
+        
+        if (previousTop >= currentTop ) {
+            //if scrolling up... 
+            if( currentTop < secondaryNavOffsetTop ) {
+                //secondary nav is not fixed
+                mainHeader.removeClass('is-hidden');
+                secondaryNavigation.removeClass('fixed slide-up');
+                belowNavHeroContent.removeClass('secondary-nav-fixed');
+            } else if( previousTop - currentTop > scrollDelta ) {
+                //secondary nav is fixed
+                mainHeader.removeClass('is-hidden');
+                secondaryNavigation.removeClass('slide-up').addClass('fixed'); 
+                belowNavHeroContent.addClass('secondary-nav-fixed');
+            }
+            
+        } else {
+            //if scrolling down...  
+            if( currentTop > secondaryNavOffsetTop + scrollOffset ) {
+                //hide primary nav
+                mainHeader.addClass('is-hidden');
+                secondaryNavigation.addClass('fixed slide-up');
+                belowNavHeroContent.addClass('secondary-nav-fixed');
+            } else if( currentTop > secondaryNavOffsetTop ) {
+                //once the secondary nav is fixed, do not hide primary nav if you haven't scrolled more than scrollOffset 
+                mainHeader.removeClass('is-hidden');
+                secondaryNavigation.addClass('fixed').removeClass('slide-up');
+                belowNavHeroContent.addClass('secondary-nav-fixed');
+            }
+
+        }
+    }
+});
+
+// SmoothScroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
