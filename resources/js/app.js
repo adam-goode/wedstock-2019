@@ -115,3 +115,15 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+$(document).ready(function(){
+   $( ".add-row" ).click(function(){
+      var $clone = $( "ul.personal-details" ).first().clone();
+      $clone.append( "<button type='button' class='remove-row'>-</button>" );
+      $clone.insertBefore( ".add-row" );
+   });
+  
+   $( ".form-style-9" ).on("click", ".remove-row", function(){
+      $(this).parent().remove();
+   });
+});

@@ -124,11 +124,34 @@
                                 <img class="rsvp ml-5 mb-3" src="/images/rsvp.svg" alt="">
                                 <p class="text-left mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
                             </div>
+                            <div class="col-12">
+                                <form>
+                                    <ul class="personal-details w-100">       
+                                        <div class="row w-100">
+                                            <ul class="col-12 w-100">         
+                                                <li>
+                                                    <label for="NameOfVessel">Your Name</label>
+                                                    <input id="NameOfVessel" type="text" name="NameOfVessel" class="field-style field-split25 align-left" placeholder="Name of Vessel" />   
+                                                </li>
+                                            </ul>
+                                        </li>
+                                             
+                                    </ul>
+                                    <button type="button" class="add-row">+</button> 
+                                    <div class="submit-div">
+                                        <ul>
+                                            <li>
+                                                <input type="submit" value="Submit" class="submit-btn" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
 
