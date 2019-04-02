@@ -125,7 +125,7 @@
                                 <p class="text-left mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
                             </div>
                             <div class="col-12">
-                                <form>
+                                <form class="form-style-9">
                                     <ul class="personal-details w-100">       
                                         <div class="row w-100">
                                             <ul class="col-12 w-100">         
@@ -136,16 +136,16 @@
                                             </ul>
                                         </li>
                                              
-                                    </ul>
-                                    <button type="button" class="add-row">+</button> 
-                                    <div class="submit-div">
-                                        <ul>
-                                            <li>
-                                                <input type="submit" value="Submit" class="submit-btn" />
-                                            </li>
                                         </ul>
-                                    </div>
-                                </form>
+                                        <button type="button" class="add-row">+</button> 
+                                        <div class="submit-div">
+                                            <ul>
+                                                <li>
+                                                    <input type="submit" value="Submit" class="submit-btn" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
                     </div>
