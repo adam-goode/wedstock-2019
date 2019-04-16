@@ -123,12 +123,12 @@
                                 <img class="logo" src="/images/rsvp.svg" alt="">
                                     </div>
                                 </div>
-                                <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before 31.05.2019 </p>
+                                <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before <b>31.05.2019</b> </p>
                                 <form class="form">
                                     {{ csrf_field() }}
                                          <div class="form-group text-center">
                                             <label for="names">Who are you?</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees first names and surnames" required>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees first and last names" required>
                                         </div>
                                         <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
 
