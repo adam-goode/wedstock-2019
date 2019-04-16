@@ -23,11 +23,8 @@ body {
   background-position: center center;
 }
 .rsvp-hero {
-  height: 150vh;
-  background-size: cover;
-  background-position: center center;
-  @include media-breakpoint-down(md) {
-  }
+  height: 125vh !important;
+
 }
 .present-hero {
   height: 100vh;

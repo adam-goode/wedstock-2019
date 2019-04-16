@@ -1405,9 +1405,7 @@ body {
 }
 
 .rsvp-hero {
-  height: 150vh;
-  background-size: cover;
-  background-position: center center;
+  height: 125vh !important;
 }
 
 .present-hero {
