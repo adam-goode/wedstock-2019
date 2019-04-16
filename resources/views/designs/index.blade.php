@@ -123,13 +123,13 @@
                             <div class="col-12 col-md-10">
                                 <img class="rsvp ml-5 mb-3" src="/images/rsvp.svg" alt="">
                                 <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
-                                <form>
-                                    <div class="m-5">
+                                <form class="form">
+                                    {{ csrf_field() }}
+                                     <div class="m-5">
                                         <div class="form-group text-left">
                                             <label for="exampleInputEmail1">Who are you?</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names">
                                         </div>
-                                        <form class="form">
 
                                         <div class="inputGroup">
                                             <input id="radio1" name="radio" type="radio"/>
@@ -139,7 +139,6 @@
                                             <input id="radio2" name="radio" type="radio"/>
                                             <label for="radio2">No</label>
                                           </div>
-                                        </form>
 
 <!--                                         
                                         <div class="form-group">
