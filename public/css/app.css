@@ -1803,8 +1803,8 @@ img.logo {
 @media (max-width: 576px) {
   .navbar-nav {
     display: contents !important;
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
   }
 
   .navbar-nav .nav-item {
