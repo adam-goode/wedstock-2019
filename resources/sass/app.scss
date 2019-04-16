@@ -113,7 +113,16 @@ a {
 		}
 	}
 }
-
+.camping-info {
+	a {
+		color: #fff;
+		font-weight: 700;
+		transition: ease all 0.5s;
+		&:hover {
+			color: #6f6f6f;
+		}
+	}
+}
 
 .fixed-top {
   padding-top: 0 !important;
