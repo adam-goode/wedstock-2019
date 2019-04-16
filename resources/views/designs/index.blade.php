@@ -79,16 +79,16 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center staying-location">
             
-                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
-                    <span class="col-12 d-block">Westmead Hotel <span class="d-block small">(2 miles away)</span></span>
+                <a href="https://westmeadhotel.co.uk/" target="_blank" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                    <span class="col-12 d-block hover-copy">Westmead Hotel <span class="d-block small">(2 miles away)</span></span>
                 </a>
 
-                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
-                    <span class="col-12 d-block">The Limes Country Lodge Hotel <span class="d-block small">(2 miles away)</span></span>
+                <a href="https://www.limescountrylodge.co.uk/" target="_blank" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                    <span class="col-12 d-block hover-copy">The Limes Country Lodge Hotel <span class="d-block small">(2 miles away)</span></span>
                 </a>
 
-                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
-                    <span class="col-12 d-block">Abbey Hotel <span class="d-block small">(3 miles away)</span></span>
+                <a href="https://www.theabbeyhotel.co.uk/" target="_blank" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                    <span class="col-12 d-block hover-copy">Abbey Hotel <span class="d-block small">(3 miles away)</span></span>
                 </a>
 
             </div>
@@ -127,7 +127,7 @@
                                 <form class="form">
                                     {{ csrf_field() }}
                                          <div class="form-group text-center">
-                                            <label for="exampleInputEmail1">Who are you?</label>
+                                            <label for="exampleInputEmail1">Who is attending?</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names" required>
                                         </div>
                                         <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
