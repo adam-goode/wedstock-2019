@@ -442,6 +442,12 @@ img.logo {
   font-size: 18px;
   font-weight: 600;
   line-height: 36px;
+  button {
+	@include media-breakpoint-down(md) {
+		width: 100%;
+		display: block;
+	}
+  }
 }
 
 

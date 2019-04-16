@@ -1902,6 +1902,13 @@ img.logo {
   line-height: 36px;
 }
 
+@media (max-width: 991.98px) {
+  .form button {
+    width: 100%;
+    display: block;
+  }
+}
+
 *,
 *::before,
 *::after {
