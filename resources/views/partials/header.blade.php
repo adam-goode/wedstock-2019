@@ -16,8 +16,7 @@
  
     </head>
     <body>
-    <div id="app">
-
+ 
     <header class="cd-auto-hide-header">
         <nav class="cd-primary-nav">
             <nav class="navbar navbar-expand-sm fixed-top wid-100 p-0">
@@ -27,16 +26,16 @@
                             <a class="nav-link d-flex align-items-center" href="#venue">The Venue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">Stage Times</a>
+                             <a class="nav-link d-flex align-items-center" href="#stageTimes">Stage Times</a>
+                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#stayingOver">Staying Over</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">Staying Over</a>
+                            <a class="nav-link d-flex align-items-center" href="#presents">Presents</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">Presents</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">RSVP</a>
+                            <a class="nav-link d-flex align-items-center" href="#contact">RSVP</a>
                         </li>
                     </ul>
                 </div>

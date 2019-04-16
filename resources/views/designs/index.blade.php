@@ -8,20 +8,17 @@
                                 <img class="logo" src="/images/logo.svg" alt="">
                             </div>
                             <div data-aos="zoom-out" data-aos-delay="1000" data-aos-duration="2000">
-                                <h2 class="text-center">Helen and Joe are getting married!</h2>
+                                 <h2 class="text-center">Helen and Joe are getting married!</h2>
                                 <h2 class="text-center">Saturday 24th August 2019</h2>
                                 <h2 class="text-center">Alcott Farm, Alvechurch B48 7EH</h2>
                             </div>
-                        </div>
-                        <div class="caption-wrapper">
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="venue" id="#venue" style="background-image: url('images/section-two-bg.jpg')";>
+        <div class="venue" id="venue" style="background-image: url('images/section-two-bg.jpg')";>
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-12 col-md-7 venue-inner text-center text-md-left">
@@ -40,7 +37,7 @@
             </div>
         </div>
 
-        <div class="stage-times">
+        <div class="stage-times" id="stageTimes">
             <div class="container h-100">
                 <div class="row h-100 align-items-end justify-content-center">
                     <div class="col-12 col-md-9 text-md-right text-center pb-5 stage-time-inner">
@@ -57,16 +54,16 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="stayingOver">
             <div class="row">
-                <div class="col-12 col-md-6 px-0" div data-aos="fade-up-right" data-aos-duration="1000">
+                <div class="col-12 col-md-6 px-0">
                     <div class="fire-img" style="background-image: url('images/camp.jpg')";>
                         <div class="staying-over">
                             <img src="/images/staying-over.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 camping-info" div data-aos="fade-up-right" data-aos-duration="2000">
+                <div class="col-12 col-md-6 camping-info">
                     <div class="row align-items-center justify-content-center h-100 p-5">
                         <div class="col-12 col-md-10 text-center text-md-left">
                             <p>In true festival fashion, there are plenty of options for staying overnight on-site. </p>
@@ -82,21 +79,21 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center staying-location">
             
-                <a data-aos="fade-up-right" data-aos-delay="0" href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
                     <span class="col-12 d-block">Westmead Hotel <span class="d-block small">(2 miles away)</span></span>
                 </a>
 
-                <a data-aos="fade-up-right" data-aos-delay="500" href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
                     <span class="col-12 d-block">The Limes Country Lodge Hotel <span class="d-block small">(2 miles away)</span></span>
                 </a>
 
-                <a data-aos="fade-up-right" data-aos-delay="1000" href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
+                <a href="" class="col-12 col-md-4 d-inline-block staying-location-info w-100">
                     <span class="col-12 d-block">Abbey Hotel <span class="d-block small">(3 miles away)</span></span>
                 </a>
 
             </div>
         </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="presents">
         <div class="row">
             <div class="col-12 p-0">
                 <div class="present-hero" style="background-image: url('images/present.jpg')";></div>
@@ -113,25 +110,26 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="contact">
         <div class="row">
             <div class="col-12 p-0">
                 <div class="present-hero" style="background-image: url('images/post.jpg')";></div>
                 <div class="presents-wrapper text-center">
                     <div class="presents-inner d-flex h-100 align-items-center">
                         <div class="row w-100 justify-content-center">
-                            <div class="col-12 col-md-10">
-                                <img class="rsvp ml-5 mb-3" src="/images/rsvp.svg" alt="">
+                            <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-5">
+                                <img class="logo" src="/images/rsvp.svg" alt="">
                                 <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
                                 <form class="form">
                                     {{ csrf_field() }}
                                      <div class="m-5">
-                                        <div class="form-group text-left">
+                                        <div class="form-group text-center">
                                             <label for="exampleInputEmail1">Who are you?</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names" required>
                                         </div>
+                                        <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
 
-                                        <div class="inputGroup">
+                                        <div class="inputGroup mt-0 pt-0">
                                             <input id="radio1" name="radio" type="radio"/>
                                             <label for="radio1">Yes</label>
                                           </div>
@@ -139,17 +137,6 @@
                                             <input id="radio2" name="radio" type="radio"/>
                                             <label for="radio2">No</label>
                                           </div>
-
-<!--                                         
-                                        <div class="form-group">
-                                            <ul class="phq-checkboxes">
-                                                <li class="d-inline pr-1"><input type="radio" id="active" name="active" value="1"><label for="active">YES! We're attending!</label></li>
-                                                
-                                                <li class="d-inline pr-1"><input type="radio" id="featured" value="1"><label for="featured">Unfortunatly, I/We can't attend</label></li>
-                                                
-                                            </ul>
-                                        </div> -->
-                                        
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>
