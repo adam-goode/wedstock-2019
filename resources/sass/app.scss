@@ -356,9 +356,13 @@ img.logo {
 	max-width: 30vw;
 }
 @media (max-width: 576px) {
+	.cd-auto-hide-header {
+		transform: scale(0.85);
+		top: -15px;
+	}
 	.navbar-nav {
 		display: contents !important;
-		transform: scale(0.65);
+		transform: scale(0.85);
 		.nav-item {
 			width: auto
 			a {
