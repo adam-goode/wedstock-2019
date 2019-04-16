@@ -127,8 +127,8 @@
                                 <form class="form">
                                     {{ csrf_field() }}
                                          <div class="form-group text-center">
-                                            <label for="exampleInputEmail1">Who are you?</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees first names and surnames" required>
+                                            <label for="names">Who are you?</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees first names and surnames" required>
                                         </div>
                                         <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
 
@@ -141,8 +141,8 @@
                                             <label for="radio2">No</label>
                                           </div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Example textarea</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label for="exampleFormControlTextarea1">Optional message.</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your optional message"></textarea>
                                         </div>                                        
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                  </form>
