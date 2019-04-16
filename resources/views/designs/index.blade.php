@@ -113,7 +113,7 @@
     <div class="container-fluid" id="contact">
         <div class="row justify-content-center">
             <div class="col-12 p-0">
-                <div class="rsvp-hero" style="background-image: url('images/post.jpg')";></div>
+                <div class="present-hero" style="height: 150vh; background-image: url('images/post.jpg');"></div>
                 <div class="presents-wrapper text-center">
                     <div class="presents-inner d-flex h-100 align-items-center">
                         <div class="row w-100 justify-content-center m-0">
