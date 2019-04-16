@@ -123,7 +123,7 @@
                                 <img class="logo" src="/images/rsvp.svg" alt="">
                                     </div>
                                 </div>
-                                <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
+                                <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before 31.05.2019 </p>
                                 <form class="form">
                                     {{ csrf_field() }}
                                          <div class="form-group text-center">
