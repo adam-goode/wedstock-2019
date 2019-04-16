@@ -113,7 +113,7 @@
     <div class="container-fluid" id="contact">
         <div class="row justify-content-center">
             <div class="col-12 p-0">
-                <div class="present-hero" style="background-image: url('images/post.jpg')";></div>
+                <div class="rsvp-hero" style="background-image: url('images/post.jpg')";></div>
                 <div class="presents-wrapper text-center">
                     <div class="presents-inner d-flex h-100 align-items-center">
                         <div class="row w-100 justify-content-center m-0">
@@ -128,7 +128,7 @@
                                     {{ csrf_field() }}
                                          <div class="form-group text-center">
                                             <label for="exampleInputEmail1">Who are you?</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names" required>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees first names and surnames" required>
                                         </div>
                                         <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
 
@@ -140,6 +140,10 @@
                                             <input id="radio2" name="radio" type="radio"/>
                                             <label for="radio2">No</label>
                                           </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>                                        
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                  </form>
                             </div>
