@@ -111,12 +111,12 @@
         </div>
     </div>
     <div class="container-fluid" id="contact">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 p-0">
                 <div class="present-hero" style="background-image: url('images/post.jpg')";></div>
                 <div class="presents-wrapper text-center">
                     <div class="presents-inner d-flex h-100 align-items-center">
-                        <div class="row w-100 justify-content-center">
+                        <div class="row w-100 justify-content-center m-0">
                             <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-5">
                                 <div class="row justify-content-center">
                                     <div class="col-6">
