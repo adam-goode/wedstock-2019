@@ -144,7 +144,7 @@
                                             <label for="exampleFormControlTextarea1">Optional message.</label>
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your optional message"></textarea>
                                         </div>                                        
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
                                  </form>
                             </div>
                         </div>
