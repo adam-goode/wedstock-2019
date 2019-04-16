@@ -129,6 +129,19 @@
                                             <label for="exampleInputEmail1">Who are you?</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names">
                                         </div>
+                                        <form class="form">
+
+                                        <div class="inputGroup">
+                                            <input id="radio1" name="radio" type="radio"/>
+                                            <label for="radio1">Yes</label>
+                                          </div>
+                                          <div class="inputGroup">
+                                            <input id="radio2" name="radio" type="radio"/>
+                                            <label for="radio2">No</label>
+                                          </div>
+                                        </form>
+
+<!--                                         
                                         <div class="form-group">
                                             <ul class="phq-checkboxes">
                                                 <li class="d-inline pr-1"><input type="radio" id="active" name="active" value="1"><label for="active">YES! We're attending!</label></li>
@@ -136,7 +149,7 @@
                                                 <li class="d-inline pr-1"><input type="radio" id="featured" value="1"><label for="featured">Unfortunatly, I/We can't attend</label></li>
                                                 
                                             </ul>
-                                        </div>
+                                        </div> -->
                                         
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
