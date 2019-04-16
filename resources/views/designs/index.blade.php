@@ -127,7 +127,7 @@
                                 <form class="form">
                                     {{ csrf_field() }}
                                          <div class="form-group text-center">
-                                            <label for="exampleInputEmail1">Who is attending?</label>
+                                            <label for="exampleInputEmail1">Who am ya?</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names" required>
                                         </div>
                                         <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
