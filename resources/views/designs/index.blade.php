@@ -117,35 +117,30 @@
         <div class="row">
             <div class="col-12 p-0">
                 <div class="present-hero" style="background-image: url('images/post.jpg')";></div>
-                <div class="presents-wrapper">
+                <div class="presents-wrapper text-center">
                     <div class="presents-inner d-flex h-100 align-items-center">
                         <div class="row w-100 justify-content-center">
                             <div class="col-12 col-md-10">
                                 <img class="rsvp ml-5 mb-3" src="/images/rsvp.svg" alt="">
-                                <p class="text-left mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
-                            </div>
-                            <div class="col-12">
-                                <form class="form-style-9">
-                                    <ul class="personal-details w-100">       
-                                        <div class="row w-100">
-                                            <ul class="col-12 w-100">         
-                                                <li>
-                                                    <label for="NameOfVessel">Your Name</label>
-                                                    <input id="NameOfVessel" type="text" name="NameOfVessel" class="field-style field-split25 align-left" placeholder="Name of Vessel" />   
-                                                </li>
-                                            </ul>
-                                        </li>
-                                             
-                                        </ul>
-                                        <button type="button" class="add-row">+</button> 
-                                        <div class="submit-div">
-                                            <ul>
-                                                <li>
-                                                    <input type="submit" value="Submit" class="submit-btn" />
-                                                </li>
+                                <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
+                                <form>
+                                    <div class="m-5">
+                                        <div class="form-group text-left">
+                                            <label for="exampleInputEmail1">Who are you?</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names">
+                                        </div>
+                                        <div class="form-group">
+                                            <ul class="phq-checkboxes">
+                                                <li class="d-inline pr-1"><input type="radio" id="active" name="active" value="1"><label for="active">YES! We're attending!</label></li>
+                                                
+                                                <li class="d-inline pr-1"><input type="radio" id="featured" value="1"><label for="featured">Unfortunatly, I/We can't attend</label></li>
+                                                
                                             </ul>
                                         </div>
-                                    </form>
+                                        
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

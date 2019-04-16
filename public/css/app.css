@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);/* -------------------------------- 
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+
+/* -------------------------------- 
 
 Primary style
 
@@ -1789,7 +1791,77 @@ img.logo {
   }
 }
 
-/*@media (max-width: 576px)
-.nav-item > a
-padding: 1rem*/
+ul.phq-checkboxes {
+  list-style: none;
+  padding: 20px 0;
+}
+
+ul.phq-checkboxes li {
+  display: inline;
+  width: 200px;
+}
+
+ul.phq-checkboxes li label {
+  display: inline-block;
+  background-color: #fff;
+  color: #3b3b3b;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  white-space: nowrap;
+  margin: 3px 0px;
+  width: 40%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+}
+
+ul.phq-checkboxes li label {
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+ul.phq-checkboxes li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\F067";
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+ul.phq-checkboxes li input[type=radio]:checked + label::before {
+  content: "\F00C";
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+ul.phq-checkboxes li input[type=radio]:checked + label {
+  background-color: #c21545;
+  color: #fff;
+  border: 1px solid #c21545;
+  transition: all 0.2s;
+}
+
+ul.phq-checkboxes li input[type=radio] {
+  display: absolute;
+}
+
+ul.phq-checkboxes li input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
 
