@@ -118,12 +118,15 @@
                     <div class="presents-inner d-flex h-100 align-items-center">
                         <div class="row w-100 justify-content-center">
                             <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
                                 <img class="logo" src="/images/rsvp.svg" alt="">
+                                    </div>
+                                </div>
                                 <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before DATE </p>
                                 <form class="form">
                                     {{ csrf_field() }}
-                                     <div class="m-5">
-                                        <div class="form-group text-center">
+                                         <div class="form-group text-center">
                                             <label for="exampleInputEmail1">Who are you?</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees names" required>
                                         </div>
@@ -138,8 +141,7 @@
                                             <label for="radio2">No</label>
                                           </div>
                                         <button type="submit" class="btn btn-primary">Submit</button>
-                                    </div>
-                                </form>
+                                 </form>
                             </div>
                         </div>
                     </div>
