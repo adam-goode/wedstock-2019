@@ -352,7 +352,11 @@ img.logo {
     margin: 10px 0;
     border-radius: 100px;
     position: relative;
-
+	@include media-breakpoint-down(md) {
+		height: 60px;
+		width: 49%;
+		display: inline-block;
+	}
     label {
       padding: 12px 30px;
       border-radius: 100px;

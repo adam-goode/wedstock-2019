@@ -1806,6 +1806,14 @@ img.logo {
   position: relative;
 }
 
+@media (max-width: 991.98px) {
+  .inputGroup {
+    height: 60px;
+    width: 49%;
+    display: inline-block;
+  }
+}
+
 .inputGroup label {
   padding: 12px 30px;
   border-radius: 100px;
