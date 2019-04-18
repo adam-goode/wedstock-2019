@@ -513,4 +513,9 @@ select{
     border-radius: 100px;
     -webkit-appearance: none;
     padding-left: 30px;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #e1e0e0, #e1e0e0);
+    background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+}
 }
