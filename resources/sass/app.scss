@@ -506,4 +506,11 @@ html {
 code {
   padding: 0 8px;
 }
-
+select{
+    text-transform: none;
+    height: 60px;
+    width: 100%;
+    border-radius: 100px;
+    -webkit-appearance: none;
+    padding-left: 30px;
+}
