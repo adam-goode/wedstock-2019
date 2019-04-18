@@ -20,7 +20,7 @@ class EnquiryInternal extends Mailable
      */
     public function __construct($request)
     {
-        $this->$request = $request;
+        $this->request = $request;
     }
 
     /**
@@ -30,6 +30,6 @@ class EnquiryInternal extends Mailable
      */
     public function build()
     {
-        return $this->subject('New Web Enquiry')->view('emails.enquiry-internal')->with('enquiry', $this->request);
+        return $this->subject('New Web Enquiry')->view('emails.enquiry-internal')->with('request', $this->request);
     }
 }
