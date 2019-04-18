@@ -13,6 +13,6 @@ class EnquiryController extends Controller
     {
         Mail::to('adam-goode@hotmail.co.uk')->send(new EnquiryInternal($request));
         Mail::to('adam@clevercherry.com')->send(new EnquiryInternal($request));
-        return redirect()->back()->with('success', 'Thank you for your enquiry, someone from our team will be in touch in the next 24 hours');
+        return redirect()->back()->with('success', "Thank you for responding to Wedstock 2019.");
     }
 }
