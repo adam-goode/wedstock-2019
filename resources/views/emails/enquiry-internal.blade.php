@@ -65,7 +65,7 @@
                                 <td>
                                     <p><b>Name: </b>{{$enquiry->names}}</p>
                                     <p><b>Is {{$enquiry->names}} attending? </b>{{$enquiry->attendance}}</p>
-                                    <p><b>Enquiry:</b>{!! $enquiry->message !!}</p>
+                                    <p><b>Message:</b>{!! $enquiry->message !!}</p>
                                  </td>
                             </tr>
                         </table>
