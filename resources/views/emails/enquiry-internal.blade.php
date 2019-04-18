@@ -78,6 +78,9 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <p>You have had an enquiry through the website. Here are the details:</p>
+                                    <p><b>Name: </b>{{$enquiry->names}}</p>
+                                    <p><b>Enquiry:</b>{!! $enquiry->message !!}</p>
                                  </td>
                             </tr>
                         </table>
