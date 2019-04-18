@@ -58,12 +58,11 @@
                         <table bgcolor="#fff" width="600" style="background: #fff; width: 600px; padding: 60px 50px;" border="0" cellspacing="0" cellpadding="0">
                             <tr>
                                 <td style="padding-bottom: 20px; text-align: left;">
-                                    <span class="heading" style="font-size: 30px; color: #000;">You have an enquiry!</span>
+                                    <span class="heading" style="font-size: 30px; color: #000;">You have a response to Wedstock!</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Someone has responded to Wedstock:</p>
                                     <p><b>Name: </b>{{$enquiry->names}}</p>
                                     <p><b>Is {{$enquiry->names}} attending? </b>{{$enquiry->attendance}}</p>
                                     <p><b>Enquiry:</b>{!! $enquiry->message !!}</p>
@@ -74,7 +73,7 @@
                             <tr>
                                 <td style="padding: 20px 0 10px;">
                                     <div style="border-bottom: 1px solid #dadada; color: #ffffff; font-size: 18px; padding-bottom: 16px;    font-family: futura-pt, sans-serif;
- margin-bottom: 16px;"><a style="text-decoration: none; color: white;" href="https://wildman.cherrytest.com/terms">Terms &amp; Conditions</a></div>
+ margin-bottom: 16px;"></div>
                                     <div style="font-size: 10px;">
                                     </div>
                                 </td>
