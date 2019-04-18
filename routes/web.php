@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
- 
+Route::post('enquiry/submit', 'EnquiryController@store');
+
 Route::get('/', 'PageController@index');
 Route::get('/{slug}', 'PageController@view');

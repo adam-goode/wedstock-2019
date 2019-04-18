@@ -42,3 +42,6 @@
             </nav>
         </nav> 
     </header> 
+
+    @include('partials.alerts')
+

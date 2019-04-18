@@ -119,32 +119,32 @@
                         <div class="row w-100 justify-content-center m-0">
                             <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-5">
                                 <div class="row justify-content-center">
-                                    <div class="col-6">
+                                    <div class="col-6 col-lg-9">
                                 <img class="logo" src="/images/rsvp.svg" alt="">
                                     </div>
                                 </div>
                                 <p class="text-center mx-5">So, can you make it? Please let us know whether or not you’ll be coming before <b>31.05.2019</b> </p>
-                                <form class="form">
-                                    {{ csrf_field() }}
-                                         <div class="form-group text-center">
+                                    <form action="/enquiry/submit" method="post" class="form">
+                                        {{ csrf_field() }}
+                                        <div class="form-group text-center">
                                             <label for="names">Who are you?</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter all attendees first and last names" required>
-                                        </div>
+                                            <input type="text" name="names" class="form-control" placeholder="Enter all attendees first and last names" required>
+                                         </div>
                                         <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
-
                                         <div class="inputGroup mt-0 pt-0">
-                                            <input id="radio1" name="radio" type="radio"/>
+                                            <input id="radio1" name="radio_one" type="radio"/>
                                             <label for="radio1">Yes</label>
                                           </div>
                                           <div class="inputGroup">
-                                            <input id="radio2" name="radio" type="radio"/>
+                                            <input id="radio2" name="radio_two" type="radio"/>
                                             <label for="radio2">No</label>
                                           </div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Optional message.</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your optional message"></textarea>
-                                        </div>                                        
-                                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                            <label for="enquiryInput">Optional message.</label>
+                                            <textarea class="form-control" id="enquiryInput" name="message"  rows="3" placeholder="Enter your optional message"></textarea>
+                                         </div>                                        
+                                        <button type="submit" class="btn btn-primary mt-3" id="send">Submit</button>
+                                        <div class="error-msg"></div>
                                  </form>
                             </div>
                         </div>
