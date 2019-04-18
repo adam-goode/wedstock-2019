@@ -133,7 +133,7 @@
                                         <div class="form-group text-center">
                                             <label for="attendance">Will you be attending Wedstock 2019?</label>
                                             <select name="attendance">
-                                                <option disable checked>Can you make it?</option>
+                                                <option disabled checked>Can you make it?</option>
                                                 <option value="yes">Yes, we'd love to come!</option>
                                                 <option value="no">Unfortunatly, we can't make it</option>
                                             </select>
