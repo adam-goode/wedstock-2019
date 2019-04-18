@@ -80,8 +80,7 @@
                                 <td>
                                     <p>You have had an enquiry through the website. Here are the details:</p>
                                     <p><b>Name: </b>{{$enquiry->names}}</p>
-                                    <p><b>yes: </b>{{$enquiry->radio_one}}</p>
-                                    <p><b>no: </b>{{$enquiry->radio_two}}</p>
+                                    <p><b>Is {{$enquiry->names}} attending? </b>{{$enquiry->attendance}}</p>
                                     <p><b>Enquiry:</b>{!! $enquiry->message !!}</p>
                                  </td>
                             </tr>

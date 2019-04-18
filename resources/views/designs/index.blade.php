@@ -130,15 +130,10 @@
                                             <label for="names">Who are you?</label>
                                             <input type="text" name="names" class="form-control" placeholder="Enter all attendees first and last names" required>
                                          </div>
-                                        <label class="mt-3" for="exampleInputEmail1">Will you be attending Wedstock 2019?</label>
-                                        <div class="inputGroup mt-0 pt-0">
-                                            <input id="radio1" name="radio_one" type="radio"/>
-                                            <label for="radio1">Yes</label>
-                                          </div>
-                                          <div class="inputGroup">
-                                            <input id="radio2" name="radio_two" type="radio"/>
-                                            <label for="radio2">No</label>
-                                          </div>
+                                        <div class="form-group text-center">
+                                            <label for="names">Will you be attending Wedstock 2019?</label>
+                                            <input type="text" name="attendance" class="form-control" placeholder="Yes, I/we will be attending/No, I/we cant make it " required>
+                                         </div>
                                         <div class="form-group">
                                             <label for="enquiryInput">Optional message.</label>
                                             <textarea class="form-control" id="enquiryInput" name="message"  rows="3" placeholder="Enter your optional message"></textarea>
