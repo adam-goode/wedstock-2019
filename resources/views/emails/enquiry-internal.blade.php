@@ -65,20 +65,11 @@
                                 <td>
                                     <p><b>Name: </b>{{$enquiry->names}}</p>
                                     <p><b>Is {{$enquiry->names}} attending? </b>{{$enquiry->attendance}}</p>
-                                    <p><b>Message:</b>{!! $enquiry->message !!}</p>
+                                    <p><b>Message:</b> {!! $enquiry->message !!}</p>
                                  </td>
                             </tr>
                         </table>
-                        <table   width="600" style="background: #3f3f3f; border-top: 10px solid #3f3f3f; width: 600px; padding: 30px 50px; color: #ffffff;" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td style="padding: 20px 0 10px;">
-                                    <div style="border-bottom: 1px solid #dadada; color: #ffffff; font-size: 18px; padding-bottom: 16px;    font-family: futura-pt, sans-serif;
- margin-bottom: 16px;"></div>
-                                    <div style="font-size: 10px;">
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                         
                     </td>
                 </tr>
             </table>
